@@ -75,3 +75,94 @@ let cities = "Bergen, Beijing, Bankok, Brasilia, Prague, Porto, Phuket, Paris"
 let citiesArray = cities.split(", ")
 
 console.log(citiesArray)
+
+// ARRAY METHODS //
+
+// length
+let fruitArr = ["Banana", "Mango", "Pear", "Apple", "Orange"]
+let fruitLength = fruitArr.length
+
+console.log(fruitLength)
+
+//toString()
+let fruitString = fruitArr.toString()
+console.log(fruitString)
+
+// join()
+
+let joinFruit = fruitArr.join(" ")
+console.log(joinFruit)
+
+// Popping and pushing
+
+// pop() method removes the last element from an array
+
+let fruitPop = fruitArr.pop()
+
+console.log(fruitArr)
+
+// The pop method returns the aclue that was "popped out"
+console.log(fruitPop)
+
+// push() method adds a new element to and array (at the end)
+let fruitPush = fruitArr.push("Dragonfruit")
+
+console.log(fruitArr)
+
+// push() method returns the new array length
+console.log(fruitPush)
+
+// shift and unShift ()shifting elements
+
+// The shift() method removes the first array element and shifts all other elements to a lower index
+
+let fruitShift = fruitArr.shift()
+
+console.log(fruitArr)
+console.log(fruitShift)
+
+// The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+let fruitUnShift = fruitArr.unshift("Lemon")
+console.log(fruitArr)
+
+// Changing items
+
+// Array elements are accessed by their index number
+
+fruitArr[2] = "Kiwi"
+
+console.log(fruitArr)
+
+fruitArr[fruitArr.length] = "Potato"
+
+console.log(fruitArr)
+
+/* 
+Ikke gjør dette!!!
+
+delete fruitArr[5]
+
+console.log(fruitArr)
+ */
+
+const arr1 = ["Berit", "Emil", "Ole Gunnar"]
+const arr2 = ["Tobias", "Tord", "Ingmar"]
+const arr3 = ["Camilla", "Emilie", "Emilio"]
+
+const favPeople = arr1.concat(arr2, arr3)
+
+console.log(favPeople)
+
+// Splicing and slicing
+
+//the splice method adds new items to an array
+//The slice method slices out a piece of an array
+
+let spliced = arr1.splice(1, 2, "Bettina", "Tormund")
+
+console.log(arr1)
+console.log(spliced)
+
+const names = arr2.slice(1)
+
+console.log(names)
